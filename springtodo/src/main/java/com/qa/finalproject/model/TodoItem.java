@@ -13,23 +13,15 @@ public class TodoItem {
 	@GeneratedValue
 	private Long id;
 	@Column
-	private String title;
+	public String title;
 	@Column
-	private boolean done;
-	
-	
-	
-	public TodoItem() {
-	}
-
+	public boolean done;
 	
 	public TodoItem(Long id, String title, boolean done) {
 		this.id = id;
 		this.title = title;
 		this.done = done;
-	}
-
-	
+	}	
 	
 	public Long getId() {
 		return id;
